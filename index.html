@@ -1,46 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Project Showcase</title>
-  <link rel="stylesheet" type="text/css" href="./Assets/Style/style.css">
-  <script src="./Assets/JS/script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Assets/Style/style.css">
 </head>
 <body>
-  <header>
-    <h1>Ranzy's AWD Project Collection</h1>
-  </header>
-  <main>
-    <section class="project">
-      <h2>Project 1: Jumping Letters</h2>
-      <p>Jumping Letters: A captivating web experience where letters come alive, adding a playful touch to your website or application.</p>
-      <a href="#">Learn More</a>
-    </section>
-    <section class="project">
-      <h2>Project 2: Notification Bell</h2>
-      <p>Simplifying and centralizing notification delivery.</p>
-      <a href="#">Learn More</a>
-    </section>
-    <section class="project"> 
-    <h2>Project 3: Calculator</h2>
-      <p>This easy-to-use calculator helps you estimate the potential cost.</p>
-      <a href="#">Learn More</a>
-    </section>
-    <section class="project">
-        <h2>Project 4: Scroll Indicator</h2>
-        <p>Engaging scroll indicator for smooth navigation experience.</p>
-        <a href="#">Learn More</a>
-      </section>
-      <section class="project">
-        <h2>Project 5: Live Resume</h2>
-        <p>a dynamic and interactive online resume website. The website showcases my skills.</p>
-        <a href="#">Learn More</a>
-      </section>
-      <section class="project"> 
-    </main>
-  <footer>
-    <p>&copy; 2024 Ranz Mailed</p>
-  </footer>
+  <p>
+    <h1 class="title">Ranzy's AWD Collection</h1>
+  </p>
+
+<div id="app" class="container">
+  <a href="./Assets/Mailed_Calculator/index.html">
+  <card data-image="./Assets/bgimg/1.png">
+    <h1 slot="header">Calculator</h1>
+    <p slot="content">A simple calculator webpage with rotating color background.</p>
+  </card>
+  </a>
+  <a href="./Assets/Mailed_JumpingLetters/index.html">
+  <card data-image="./Assets/bgimg/2.png">
+    <h1 slot="header">Jumping Letters</h1>
+    <p slot="content">Click the letters to make them jump.</p>
+  </card>
+  </a>
+  <a href="./Assets/Mailed_NotifBell/index.html">
+  <card data-image="./Assets/bgimg/3.png">
+    <h1 slot="header">Notification Bell</h1>
+    <p slot="content">SMASH THAT LIKE BUTTON!</p>
+  </card>
+  </a>
+  <a href="./Assets/Resume/index.html">
+  <card data-image="./Assets/bgimg/4.png">
+    <h1 slot="header">Resume</h1>
+    <p slot="content">A sample resume with a button to change colors.</p>
+  </card>
+  </a>
+  <a href="./Assets/Schedule/index.html">
+  <card data-image="./Assets/bgimg/5.png">
+    <h1 slot="header">Schedule</h1>
+    <p slot="content">Boxes that mesmerizes your eyes.</p>
+  </card>
+  </a>
+  <a href="./Assets/Scroll_Indicator/index.html">
+  <card data-image="./Assets/bgimg/6.png">
+    <h1 slot="header">Scroll Indicator</h1>
+    <p slot="content">Scroll to make the bar longer.</p>
+  </card>
+  </a>
+  <a href="./Assets/Seatwork_Slide_Puzzle/index.html">
+  <card data-image="./Assets/bgimg/7.png">
+    <h1 slot="header">Slide Puzzle</h1>
+    <p slot="content">Your favorite childhood toy now on a website.</p>
+  </card>
+  </a>
+</div>
+
+
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+<script src="./Assets/JS/script.js"></script>
 </html>
