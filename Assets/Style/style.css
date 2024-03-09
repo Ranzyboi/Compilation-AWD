@@ -2,56 +2,52 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
-    animation: gradient 3s ease infinite;
+    background-color: #f0f0f0;
 }
 
-@keyframes gradient {
-    0% {background-position: 0%;}
-    100% {background-position: 100%;}
-}
-
-header {
-    background-color: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    text-align: center;
-    backdrop-filter: blur(5px);
-}
-
-h1 {
+.title {
     font-size: 24px;
-    margin-bottom: 0;
-    color: #fff;
-    text-shadow: 0 0 5px #00d4ff;
+    margin: 20px 0;
+    color: #333;
+    text-align: center;
+    padding: 20px 0;
 }
 
-main {
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     padding: 20px;
 }
 
-section.project {
+.card-link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
     margin-bottom: 20px;
     border: 1px solid #ddd;
     padding: 20px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
-    transform: perspective(600px) rotateX(35deg);
-    transition: transform 0.5s;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease;
+    width: calc(33% - 40px);
+    margin: 20px;
 }
 
-section.project:hover {
-    transform: perspective(600px) rotateX(0deg);
+.card:hover {
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
 }
 
-section.project h2 {
+.card h1 {
     font-size: 18px;
     margin-bottom: 10px;
-    color: #fff;
-    text-shadow: 0 0 5px #00d4ff;
+    color: #333;
 }
 
-section.project p {
+.card p {
     margin-bottom: 15px;
-    color: #fff;
+    color: #666;
 }
