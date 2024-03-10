@@ -11,50 +11,45 @@
     <h1 class="title">Ranzy's AWD Collection</h1>
   </p>
 
-  <div id="app" class="container">
-    <a v-for="project in projects" :href="project.link">
-      <card :image="project.image" :title="project.title" :description="project.description"></card>
+  <div class="card">
+    <div class="image-container">
+      <img :src="project.image">
+    </div>
+    <h2>Calculator</h2>
+    <p>A simple calculator webpage with rotating color background.</p>
+  </div>
   <a href="./Mailed_Calculator/index.html">
-  <card data-image="./Assets/Pics/Calculator.jpeg">
-    <h1 slot="header">Calculator</h1>
-    <p slot="content">A simple calculator webpage with rotating color background.</p>
-  </card>
+    <img src="./Assets/Calculator.jpeg">
   </a>
+  <h2>Jumping Letters</h2>
+  <p>Click the letters to make them jump.</p>
   <a href="./Mailed_JumpingLetters/index.html">
-  <card data-image="./Assets/Pics/JumpingLetters.jpeg">
-    <h1 slot="header">Jumping Letters</h1>
-    <p slot="content">Click the letters to make them jump.</p>
-  </card>
+    <img src="./Assets/JumpingLetters.jpeg">
   </a>
+  <h2>Notification Bell</h2>
+  <p>SMASH THAT BUTTON!</p>
   <a href="./Mailed_NotifBell/index.html">
-  <card data-image="./Assets/Pics/NotifBell.jpeg">
-    <h1 slot="header">Notification Bell</h1>
-    <p slot="content">SMASH THAT LIKE BUTTON!</p>
-  </card>
+    <img src="./Assets/NotifBell.jpeg">
   </a>
+  <h2>Resume</h2>
+  <p>A sample resume with a button to change colors.</p>
   <a href="./Mailed_Resume/index.html">
-  <card data-image="./Assets/Pics/Resume.png">
-    <h1 slot="header">Resume</h1>
-    <p slot="content">A sample resume with a button to change colors.</p>
-  </card>
+    <img src="./Assets/Resume.png">
   </a>
+  <h2>XOX Game</h2>
+  <p>Timeless fun with friends or a clever AI. Quick, strategic battles for laughs and friendly competition.</p>
   <a href="./Mailed_XOXGame/index.html">
-  <card data-image="./Assets/Pics/XOX.png">
-    <h1 slot="header">XOX Game</h1>
-    <p slot="content">Timeless fun with friends or a clever AI. Quick, strategic battles for laughs and friendly competition. </p>
-  </card>
+    <img src="./Assets/XOX.png">
   </a>
+  <h2>Scroll Indicator</h2>
+  <p>Scroll to make the bar longer.</p>
   <a href="./Mailed_Scrollindicator/index.html">
-  <card data-image="./Assets/Pics/Scrollindic.jpeg">
-    <h1 slot="header">Scroll Indicator</h1>
-    <p slot="content">Scroll to make the bar longer.</p>
-  </card>
+    <img src="./Assets/Scrollindic.jpeg">
   </a>
 </div>
 
 
 </body>
-
-<script src="https://cdn.jsdelivr.net/npm/vue@2"></script>    
+   
 <script src="./Assets/JS/script.js"></script>
 </html>
