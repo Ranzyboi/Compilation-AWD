@@ -11,7 +11,9 @@
     <h1 class="title">Ranzy's AWD Collection</h1>
   </p>
 
-<div id="app" class="container">
+  <div id="app" class="container">
+    <a v-for="project in projects" :href="project.link">
+      <card :image="project.image" :title="project.title" :description="project.description"></card>
   <a href="./Mailed_Calculator/index.html">
   <card data-image="./Assets/Pics/Calculator.jpeg">
     <h1 slot="header">Calculator</h1>
